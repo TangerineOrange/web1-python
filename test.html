@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script language="javascript" defer type="text/javascript" src="wdatepicker.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+
+    <label>
+        123
+        <input type="text" disabled="disabled" value="123123">
+        <input type="text" readonly="readonly" value="aaaaaa">
+        <input type="text" readonly unselectable="on" value="bbbbbbb">
+
+
+
+    </label>
+    <label>
+        发布日期
+
+        <input type='text' name='gidate' readonly class="govWdate" size=22
+            onFocus=" WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{$dp.$D(\'giefectdate\')}'})"
+            value="123"
+            style="width: 183PX">
+
+    </label>
+
+</body>
+
+</html>
