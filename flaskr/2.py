@@ -1,12 +1,11 @@
 from flask import Flask
 
+app = Flask(__name__)
 
 
-
-def create_app():
-  app = Flask(__name__)
-
-  return app
+@app.route('/123')
+def home():
+    return 'home'
  
 if __name__ == "__main__":
-    create_app().run()
+    app.run()
